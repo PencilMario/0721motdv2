@@ -1,6 +1,12 @@
 <html><head><title>TheMotd</title></head>
 <body style="margin:0px;padding:0px;background:#000000;overflow-y: hidden;">
-<img src= coop.jpg width="100%" height="100%">
+<img id="motd-image" src="coop.jpg" width="100%" height="100%">
+<script>
+const today = new Date();
+if (today.getMonth() === 6 && today.getDate() >= 16 && today.getDate() <= 26) {
+    document.getElementById("motd-image").src = "0721.jpg";
+}
+</script>
 <noframes></noframes><noscript></noscript>
 </body></html>
 
